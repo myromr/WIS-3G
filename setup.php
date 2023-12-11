@@ -43,37 +43,34 @@ if(isset($_GET['delid'])){
 
 
         
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap');
 
   *{
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
 
   }
 
-  body{
-    background-color: antiquewhite;
-  }
-        header{
-            font-size: 24px;
-            color: blueviolet;
-            font-family: 'Montserrat', sans-serif;
-            width: 100%;
+header{
+    font-size: 24px;
+    color: #00668c;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
     min-height: 70px;
-            background-color: rgb(34, 34, 34);
-            position: fixed;
-            top: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+    background-color: #d4eaf7;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
         
 main.table {
     width: 100vw;
     height: 100vh;
-    background-color: #ede6f6;
+    background-color: #fffefb;
 
     backdrop-filter: blur(7px);
     box-shadow: 0 .4rem .8rem #0005;
@@ -85,7 +82,7 @@ main.table {
     width: 100%;
     height: 10%;
     min-height: 70px;
-    background-color: white;
+    background-color: #fffefb;
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -148,7 +145,7 @@ main.table {
     height: 100%;
     margin-top: 70px;
 
-    background-color: #fffb;
+    background-color: #fffefb;
 
     overflow: auto;
     overflow: overlay;
@@ -175,7 +172,7 @@ main.table {
 
 .table__body::-webkit-scrollbar-thumb {
     border-radius: .5rem;
-    background-color: #0004;
+    background-color: #3b3c3d;
     visibility: hidden;
 }
 
@@ -313,7 +310,7 @@ tbody td.active {
   color: white;
   font-size: 15px;
   font-weight: bold;
-  background: blueviolet;
+  background: #d4eaf7;
   border-radius: 5px;
 }
 
@@ -321,10 +318,9 @@ tbody td.active {
 .add-record{
   width: 40px;
   height: 40px;
-  border-radius: 50%;
-
+  border-radius: 25%;
   background: white;
-  color: blueviolet;
+  color: #00668c;
   font-size: 15px;
   text-decoration: none;
   font-weight: bold;
@@ -335,7 +331,7 @@ tbody td.active {
   align-items: center;
   justify-content: center;
   font-size: 30px;
-  border: 3px solid blueviolet;
+  border: 3px solid #00668c;
 
 }
     </style>
@@ -350,7 +346,7 @@ tbody td.active {
         Student Record
         <a href="add-record.php" class="add-record"><ion-icon name="add-outline"></ion-icon></a>
         
-    </header>
+</header>
 
         <section class="table__body">
             <table  style="margin-bottom: 100px;">
